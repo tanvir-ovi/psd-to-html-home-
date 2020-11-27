@@ -1,0 +1,347 @@
+/*
+template name: My Second Psd To Html
+ Template url : 
+author :tanvir ovi
+Author Url:
+tags:
+*/
+
+/*
+Index
+1.common css
+2.Navigation
+3.slider
+4.logo
+5.service
+6.Work
+7. Testimonial
+8.Call To Action
+9.footer
+10.copyright
+*/
+
+/*
+===========
+common css
+===========
+*/
+
+@font-face {
+	font-family: "noto sans-reg";
+	src: url(../webfonts/NotoSans.woff) ,
+		 url(../webfonts/NotoSans-Regular.woff2);
+		 font-weight: normal;
+		 font-style: normal;
+		 font-display:swap;
+}
+
+@font-face {
+	font-family: "noto serif";
+	src: url(../webfonts/NotoSerif-Bold.woff) ,
+		 url(../webfonts/NotoSerif-Bold.woff2);
+		 font-display:swap;
+}
+
+@font-face {
+	font-family: "noto sans-bold";
+	src: url(../webfonts/NotoSans-Bold.woff) ,
+		 url(../webfonts/NotoSans-Bold.woff2);
+		 font-weight: normal;
+		 font-style: normal;
+		 font-display:swap;
+}
+
+body {
+	font-family: "noto sans-reg";
+}
+
+.button .btn {
+	background-color: #0d2481;
+}
+
+.line-contant {
+	position: relative;
+}
+
+.line-contant:after {
+	position: absolute;
+	content: "";
+    top: 50%;
+}
+
+.our-service {
+	left: 50px;
+}
+.our-service:after {
+    width: 46px;
+    height: 1px;
+    background-color: #98a5d9;
+    left: -50px;
+}
+
+h3 {
+	font-size: 24px;
+	color: #1e2329;
+}
+
+h6 {
+	font-size: 12px;
+}
+p {
+	font-size: 10px;
+	margin: 0;
+}
+
+hr {
+	border: none;
+	border-top: 0;
+	border-color: #bcc1c4;
+	border-style: dashed;
+}
+
+/*
+==========
+Navigation
+==========
+*/
+
+.header {
+	background-color: #0d2481;
+}
+.header .navbar {
+	padding: 0 1rem;
+}
+.brand {
+	background-color: #1e2329;
+	position: relative;
+	padding: 20px 52px;
+	margin-right: 35px;
+}
+.brand:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: -5000px;
+	right: 100%;
+	background-color: #1e2329;
+}
+
+.header .navbar-dark .navbar-nav .nav-link{
+	color: #ffffff; 
+	font-size: 14px;
+}
+
+.right-nav {
+	padding-right: 30px;
+}
+
+.rightNavPad{
+	padding: 0 15px;
+}
+
+@media (max-width: 1000px) {
+	.rightNavPad{
+		padding: 0;
+	}
+}
+
+/*
+=========
+slider
+=========
+*/
+
+.slider-img {
+	position: relative;
+}
+
+.slider-content{
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	right: 30%;
+	transform: translateY(-50%);
+	background-color: rgba(249,249,250,.3);
+	padding: 50px 65px 50px 130px;
+	line-height: 2;
+}
+
+.slider-content h1 {
+	line-height: 1.5;
+}
+.slider-content h1:after {
+	left: -65px;
+    width: 45px;
+    height: 3px;
+	background-color: #1e2329;
+}
+.slider-img .carousel-indicators{
+	display: inline-block;
+	top: 50%;
+	transform: translateY(-50%);
+	bottom: 280px;
+	margin-left: 13%;
+}
+
+.slider-img .carousel-indicators li {
+	width: 3.5px;
+	height: 30px;
+	border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+
+.slider-img .carousel-indicators .active {
+	background-color: #0d2481;
+	width: 5px;
+}
+
+/*
+=======
+service
+=======
+*/
+.service {
+	color: #98a5d9;
+}
+.service-blog {
+	background-color: #0d2481;
+	line-height: 2;
+}
+
+.service-bg img{
+	height: 455px;
+}
+
+.service-blog .first-service {
+	background-color: #1a348a;
+	position: relative;
+	z-index: 2;
+}
+.service-blog .first-service:before {
+	content: "";
+	position: absolute;
+	top: -16px;
+    bottom: -16px;
+    left: -35px;
+    right: -15px;
+	background-color: #1a348a;
+	z-index: -1;
+	border-top: 4px solid #fff;
+}
+
+.service-blog .first-service h6 {
+	color: #fff;
+}
+
+.service-blog .button .btn {
+	background-color: #0c2175;
+}
+.service-blog ul {
+	padding: 0 0 0 35px;
+	margin: 0;
+}
+
+/*
+======
+work
+======
+*/
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  height: 350px;
+}
+
+/*
+===========
+testimonial
+===========
+*/
+
+.testimonial .card{
+	box-shadow: 4px 3px 8px 0px;
+}
+
+.testimonial p {
+	color: #4d5b6c;
+}
+
+.testimonial-point {
+	width: 20px;
+	height: auto;
+}
+
+/*
+===========
+news
+===========
+*/
+
+.news .button .btn {
+	font-size: 11px;
+}
+
+/*
+===========
+call
+===========
+*/
+
+.call {
+	background-image: url(../images/CALL.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+}
+
+.call .number {
+	font-size: 14px;
+}
+
+.call .button .btn {
+	font-size: 14px;
+}
+
+.call .phoneRing {
+	width: 60px;
+    margin-bottom: 15px;
+}
+
+/*
+===========
+footer
+===========
+*/
+
+.foot-brand {
+    background-color: #1e2329;
+    padding: 15px 20px;
+    width: 200px;
+    height: auto;
+}
+
+.footer p{
+	color: #4d5b6c;
+}
+
+.footer .our-service {
+	color:  #1e2329;
+}
+
+.footer .our-service:after {
+	background-color: #1e2329;
+}
+
+.copyright {
+	display: flex;
+	justify-content: space-between;
+}
