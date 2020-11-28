@@ -18,6 +18,7 @@
 
 	<!-- custom css -->
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/responsive.css">
 
 	<!-- FontAwesome -->
 	<link rel="stylesheet" href="css/all.min.css">
@@ -26,7 +27,7 @@
 </head>
 <body>
 	<!-- navigation -->
-	<section class="header">
+	<section class="header ">
 		<div class="container-fluid">
 			<nav class="navbar navbar-expand-lg navbar-dark ">
 				<!-- brand -->
@@ -364,14 +365,67 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 my-auto">
-					<div class="card">
-						<img src="images/video.png" alt="video" class="card-img-top">
-						<div class="card-body">
-							<p class="card-text">“Lorem Ipsum is simply dummy text of the printing and typesetting industry  has been the industry's standard dummy text ever since the when an unknown printer took a galley.”</p>
-							<h5 class="my-5 d-inline-block mr-3"> Danielle Fugazzi</h5>
-							<p class=" d-inline-block card-text">UI Designer at UHUB</p>
-						</div>
-					</div> <!-- card -->
+					<div id="cardSliding" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+					    <li data-target="#cardSliding" data-slide-to="0" class="active"></li>
+					    <li data-target="#cardSliding" data-slide-to="1"></li>
+					    <li data-target="#cardSliding" data-slide-to="2"></li>
+					    <li data-target="#cardSliding" data-slide-to="3"></li>
+					  </ol>
+					  <div class="carousel-inner">
+    						<div class="carousel-item active">
+								<div class="card">
+									<div class="card-header">
+										<iframe class="img-fluid" width="560" height="315" src="https://www.youtube.com/embed/xCUMtPbqAM8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div> <!-- card-header -->
+									<div class="card-body">
+										<p class="card-text">“Lorem Ipsum is simply dummy text of the printing and typesetting industry  has been the industry's standard dummy text ever since the when an unknown printer took a galley.”</p>
+										<h5 class="my-5 d-inline-block mr-3"> Danielle Fugazzi</h5>
+										<p class=" d-inline-block card-text">UI Designer at UHUB</p>
+									</div> <!-- card-body -->
+								</div> <!-- card -->
+							</div> <!-- carousel-item -->
+
+							<div class="carousel-item ">
+								<div class="card">
+									<div class="card-header">
+										<iframe class="img-fluid" width="560" height="315" src="https://www.youtube.com/embed/KdukEgqzcA4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div> <!-- card-header -->
+									<div class="card-body">
+										<p class="card-text">“Lorem Ipsum is simply dummy text of the printing and typesetting industry  has been the industry's standard dummy text ever since the when an unknown printer took a galley.”</p>
+										<h5 class="my-5 d-inline-block mr-3"> Danielle Fugazzi</h5>
+										<p class=" d-inline-block card-text">UI Designer at UHUB</p>
+									</div> <!-- card-body -->
+								</div> <!-- card -->
+							</div> <!-- carousel-item -->
+
+							<div class="carousel-item ">
+								<div class="card">
+									<div class="card-header">
+										<iframe class="img-fluid" width="560" height="315" src="https://www.youtube.com/embed/YoYfI4qBjSU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div> <!-- card-header -->
+									<div class="card-body">
+										<p class="card-text">“Lorem Ipsum is simply dummy text of the printing and typesetting industry  has been the industry's standard dummy text ever since the when an unknown printer took a galley.”</p>
+										<h5 class="my-5 d-inline-block mr-3"> Danielle Fugazzi</h5>
+										<p class=" d-inline-block card-text">UI Designer at UHUB</p>
+									</div> <!-- card-body -->
+								</div> <!-- card -->
+							</div> <!-- carousel-item -->
+
+							<div class="carousel-item ">
+								<div class="card">
+									<div class="card-header">
+										<iframe class="img-fluid" width="560" height="315" src="https://www.youtube.com/embed/IuN4mrMy6LQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div> <!-- card-header -->
+									<div class="card-body">
+										<p class="card-text">“Lorem Ipsum is simply dummy text of the printing and typesetting industry  has been the industry's standard dummy text ever since the when an unknown printer took a galley.”</p>
+										<h5 class="my-5 d-inline-block mr-3"> Danielle Fugazzi</h5>
+										<p class=" d-inline-block card-text">UI Designer at UHUB</p>
+									</div> <!-- card-body -->
+								</div> <!-- card -->
+							</div> <!-- carousel-item -->
+						</div> <!-- carousel-inner -->
+					</div> <!-- cardSliding -->
 				</div> <!-- col-lg-4 -->
 				<div class="col-lg-8">
 			   	<div class="row">
@@ -428,7 +482,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="row">
-						<div class="col-lg-6 w-75">
+						<div class="col-lg-6 w-75 katapaharWidth">
 								<p class="our-service line-contant">21 May 2019   |   humaan</p>
 								<h3 class="mt-2">How Wireless Technology is Changing Business</h3>
 								<img src="images/katapahar.jpg" alt="katapahar" class="img-fluid my-4">
@@ -468,7 +522,7 @@
 									</button> 
 								</div> <!-- button-->
 							</div> <!-- row-->
-						</div> <!-- col-lg-6 -->
+						</div> <!-- col-lg-5 -->
 					</div>	<!-- row-->
 				</div> <!-- col-lg-12 -->
 			</div> <!-- row-->
@@ -480,7 +534,7 @@
 	<section class="call">
 		<div class="container">
 			<div class="row ">
-				<div class="col-lg-6 my-5">
+				<div class="col-lg-6 my-5 m-748">
 					<h6 class="our-service line-contant mt-5">REACH OUT NOW!</h6>
 			   	<h3 class="mt-1 mb-3 text-white">We’re available for 8 hours a day! Contact to require a detailed analysis and assessment of your plan.</h3>
 			   	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry  has been the industry's standard dummy text ever since the when an unknown printer took a galley.</p>
@@ -510,35 +564,35 @@
 					<div class="row">
 						<div class="col-lg-12">
 							<div class="row">
-								<div class="col-lg-6">
+								<div class="col-6">
 									<h6 class="our-service line-contant">Head Office</h6>
 									<div class="mt-4 mb-3">
 										<p>Onepager. Inc., 3133 Connecticut </p>
 										<p>Ave NW, #923, Washington </p>
 										<p>DC, 20008, USA</p>
 									</div>
-								</div> <!-- col-lg-6 -->
-								<div class="col-lg-6">
+								</div> <!-- col-6 -->
+								<div class="col-6">
 									<h6 class="our-service line-contant">Studio Office</h6>
 									<div class="mt-4 mb-3">
 										<p>Mainstreet 1234 </p>
 										<p>1236 Anytown, Germany (DE) </p>
 									</div>
-								</div> <!-- col-lg-6 -->
+								</div> <!-- col-6 -->
 							</div> <!-- row -->
 						</div> <!-- col-lg-12 -->
 					</div>  <!-- row -->
 				</div> <!-- col-lg-5 -->
 				<div class="col-lg-7 text-center mt-5">
 					<div class="row">
-						<div class="col-lg-4">
+						<div class="col-4">
 							<h6 class="my-4">Resources</h6>
 							<p>Documentation</p>
 							<p class="my-2">Developer Metrics</p>
 							<p>Enterprise</p>
 							<p class="my-2">Pricing</p>
 						</div> <!-- col-lg-4 -->
-						<div class="col-lg-4">
+						<div class="col-4">
 							<h6 class="my-4">Company</h6>
 							<p>About</p>
 							<p class="my-2">Custommer</p>
@@ -546,7 +600,7 @@
 							<p class="my-2">Support</p>
 							<p>Terms</p>
 						</div> <!-- col-lg-4 -->
-						<div class="col-lg-4">
+						<div class="col-4">
 							<h6 class="my-4"> Social</h6>
 							<p>Facebook</p>
 							<p class="my-2">Instagram</p>
