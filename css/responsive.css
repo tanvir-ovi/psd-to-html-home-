@@ -105,8 +105,17 @@ responsive
 
 
 @media (max-width: 426px) {
-	button.navbar-toggler {
-    margin: 20px auto;
+	.header .brand img {
+		width: 150px;
+	}
+	 .header .brand .navbar-brand {
+	     padding-top: 0; 
+	     padding-bottom: 0; 
+	     margin-right: 0; 
+	}
+	.brand {
+	    padding: 15px 13px;
+	        margin-right: 0;
 	}
 	.slider-content{
 		top: 5%;
@@ -143,6 +152,9 @@ responsive
 		height: 20px;
 		border-top: 2px solid transparent;
 	    border-bottom: 2px solid transparent;
+	}
+	.slider-img .carousel-indicators .active {
+		width: 4px;
 	}
 	
 	.slider span.carousel-control-prev-icon {
@@ -182,9 +194,32 @@ responsive
 
 }
 
+@media (max-width: 376px) {
+	.slider h1.mb-4.line-contant {
+	    font-size: 15px;
+	    margin-bottom: 7px!important;
+	}
+}
+
 @media (max-width: 321px) {
 	.swiper-slide {
 	  width: 130px;
 	  height: 200px;
 	}
+	.slider h1.mb-4.line-contant {
+	    font-size: 12px;
+	    margin-bottom: 4px!important;
+	}
+	.slider .slider-content p {
+	    line-height: 1.6;
+	}
+	.slider button.btn.btn-lg.btn-primary.mt-5 {
+	    margin-top: 3px!important;
+	    font-size: 9px;
+	    padding: 5px 8px;
+	}
+	.slider button i.ml-4.fas.fa-long-arrow-alt-right {
+	    margin-left: 11px!important;
+	}
+
 }
